@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Reverse a Number</title>
+</head>
+
+<script type="text/javascript" >
+function rvrs(n)
+	{
+		n = n + "";
+		return n.split("").reverse().join("");
+	};
+	
+	function Answer()
+	{ 
+		let str = document.getElementById("String").value;
+		let ans = rvrs(str);
+		document.getElementById("Answer").innerHTML = ans;
+	};
+</script>
+<style>
+	html{
+		background-color:black;
+	}
+	h1{
+	color:white;
+	}
+	p{
+	color:yellow;
+	text-align:center;
+	}
+	
+</style>
+
+<h1><center>This program will Reverse the given number </center></h1>
+	
+<fieldset>
+	<p><label for="Name">&emsp;Please enter a number you want to reverse:</label></p>
+	<p><input type="text" id="String" name="String"><br><br></p>
+	<p><label for="Answer1">To view the result click the checker button:</label></p>
+	<p id = "Answer"></p><br><br>
+	<p><input type = "button"
+	value = "Check"
+	onClick = "javascript:Answer()"></p>
+
+</fieldset>
+</body>
+</head>
+</html>
